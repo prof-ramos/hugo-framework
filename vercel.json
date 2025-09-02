@@ -1,0 +1,61 @@
+{
+  "version": 2,
+  "name": "hugo-framework",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ],
+  "build": {
+    "env": {
+      "HUGO_VERSION": "0.149.0"
+    }
+  },
+  "routes": [
+    {
+      "src": "/sitemap.xml",
+      "headers": { "content-type": "application/xml" }
+    },
+    {
+      "src": "/robots.txt",
+      "headers": { "content-type": "text/plain" }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1",
+      "status": 200
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(css|js|woff2?|ttf|eot|svg|png|jpg|jpeg|gif|ico|webp)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}

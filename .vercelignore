@@ -1,0 +1,27 @@
+# Ignore development files
+.git/
+.gitignore
+.gitmodules
+.hugo_build.lock
+.vercelignore
+
+# Ignore documentation and config files
+README.md
+CLAUDE.md
+AGENTS.md
+.coderabbit.yaml
+
+# Ignore Hugo cache and resources
+resources/_gen/
+.cache/
+
+# Ignore local development
+.vscode/
+.DS_Store
+*.log
+
+# Ignore themes source (keep as submodule)
+# themes/ folder will be included automatically
+
+# Don't ignore public/ as it's the build output
+# Vercel needs it for static builds
