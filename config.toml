@@ -1,0 +1,100 @@
+baseURL = "http://example.org/"
+languageCode = "pt-br"
+title = "Meu Site Hugo"
+theme = "PaperMod"
+
+[params]
+env = "production"
+title = "Meu Site Hugo"
+description = "Descrição do site para SEO e redes sociais."
+keywords = ["Blog", "PaperMod", "Hugo"]
+author = "Seu Nome"
+images = ["/images/profile.jpg"]
+DateFormat = "02 de Janeiro de 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+
+[params.assets]
+favicon = "/favicon.ico"
+favicon16x16 = "/favicon-16x16.png"
+favicon32x32 = "/favicon-32x32.png"
+apple_touch_icon = "/apple-touch-icon.png"
+safari_pinned_tab = "/safari-pinned-tab.svg"
+
+[params.label]
+text = "Home"
+icon = "/apple-touch-icon.png"
+iconHeight = 35
+
+[params.profileMode]
+enabled = true
+title = "Seu Nome"
+subtitle = "Sua descrição profissional"
+imageUrl = "/images/profile.jpg"
+imageWidth = 150
+imageHeight = 150
+imageTitle = "Foto de Perfil"
+
+[[params.profileMode.buttons]]
+name = "Posts"
+url = "/posts/"
+
+[[params.profileMode.buttons]]
+name = "Sobre"
+url = "/about/"
+
+[[params.profileMode.buttons]]
+name = "Contato"
+url = "/contact/"
+
+[params.homeInfoParams]
+Title = "Olá 👋"
+Content = "Bem-vindo ao meu blog!"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/seu-usuario"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/seu-usuario"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://linkedin.com/in/seu-usuario"
+
+[menu]
+
+  [[menu.main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 10
+
+  [[menu.main]]
+  identifier = "about"
+  name = "Sobre"
+  url = "/about/"
+  weight = 20
+
+  [[menu.main]]
+  identifier = "contact"
+  name = "Contato"
+  url = "/contact/"
+  weight = 30
+
