@@ -1,0 +1,18 @@
+{
+  "name": "hugo-framework",
+  "version": "1.0.0",
+  "description": "Site Hugo com tema PaperMod em português brasileiro",
+  "scripts": {
+    "dev": "hugo server -D",
+    "build": "hugo --gc --minify",
+    "vercel-build": "hugo --gc --minify"
+  },
+  "keywords": [
+    "hugo",
+    "papermod",
+    "blog",
+    "static-site"
+  ],
+  "author": "Gabriel Ramos",
+  "license": "MIT"
+}

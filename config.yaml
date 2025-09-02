@@ -1,4 +1,4 @@
-baseURL: "http://example.org/"
+baseURL: "https://your-project-name.vercel.app"
 languageCode: "pt-br"
 title: "Meu Site Hugo"
 theme: "PaperMod"
