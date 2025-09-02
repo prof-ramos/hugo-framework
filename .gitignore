@@ -1,2 +1,7 @@
 .env
 .env.build
+# Hugo build output
+public/
+resources/
+.hugo_build.lock
+*.lock
